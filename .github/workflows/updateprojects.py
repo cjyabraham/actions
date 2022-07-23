@@ -29,7 +29,7 @@ with urllib.request.urlopen(landscapeHostedProjects) as hostedProjectsResponse:
                         'description': projectData['description'] if 'description' in projectData else None,
                         'homepage_url': projectData['homepage_url'] if 'homepage_url' in projectData else None,
                         'project': projectData['project'] if 'project' in projectData else None,
-                        'repo_url': project['repo_url'] if 'repo_url' in projectData else None,
+                        'repo_url': projectData['repo_url'] if 'repo_url' in projectData else None,
                         'logo': projectData['logo'] if 'logo' in projectData else None,
                         'twitter': projectData['twitter'] if 'twitter' in projectData else None,
                         'crunchbase': projectData['crunchbase'] if 'crunchbase' in projectData else None,
