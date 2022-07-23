@@ -10,7 +10,7 @@ import urllib.request
 import json
 import os
 
-projectsCsvFile = os.path.dirname(os.path.realpath(__file__))+'/../../_data/projects.csv'
+projectsCsvFile = os.path.dirname(os.path.realpath(__file__))+'/../../data/projects.csv'
 
 landscapeBaseURL = 'https://landscape.cncf.io'
 landscapeHostedProjects = landscapeBaseURL+'/api/items?project=hosted'
@@ -45,7 +45,7 @@ with urllib.request.urlopen(landscapeHostedProjects) as hostedProjectsResponse:
                         'youtube_url': projectData['extra']['youtube_url'] if 'extra' in projectData and 'youtube_url' in projectData['extra'] else None
                         })
 
+json_object = json.dumps(csvRows)
+
 with open(projectsCsvFile, 'w') as projectsCsvFileObject:
-    writer = csv.DictWriter(projectsCsvFileObject, fieldnames = csvRows[0].keys())
-    writer.writeheader() 
-    writer.writerows(csvRows) 
+    projectsCsvFileObject.write(json_object)
