@@ -45,7 +45,7 @@ with urllib.request.urlopen(landscapeHostedProjects) as hostedProjectsResponse:
                         'youtube_url': projectData['extra']['youtube_url'] if 'extra' in projectData and 'youtube_url' in projectData['extra'] else None
                         })
 
-json_object = json.dumps(csvRows)
+json_object = json.dumps(csvRows, indent=4)
 
 with open(projectsCsvFile, 'w') as projectsCsvFileObject:
     projectsCsvFileObject.write(json_object)
