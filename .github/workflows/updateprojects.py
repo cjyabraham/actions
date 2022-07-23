@@ -13,7 +13,7 @@ import os
 projectsCsvFile = os.path.dirname(os.path.realpath(__file__))+'/../../_data/projects.csv'
 
 landscapeBaseURL = 'https://landscape.cncf.io'
-landscapeHostedProjects = landscapeBaseURL+'/data/exports/projects-hosted.json'
+landscapeHostedProjects = landscapeBaseURL+'/api/items?project=hosted'
 landscapeSingleItem = landscapeBaseURL+'/data/items/{}.json'
 
 csvRows = []
