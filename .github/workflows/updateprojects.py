@@ -12,14 +12,9 @@ import os
 
 projectsCsvFile = os.path.dirname(os.path.realpath(__file__))+'/../../_data/projects.csv'
 
-landscapeBaseURL = 'https://landscape.openmainframeproject.org'
+landscapeBaseURL = 'https://landscape.cncf.org'
 landscapeHostedProjects = landscapeBaseURL+'/data/exports/projects-hosted.json'
 landscapeSingleItem = landscapeBaseURL+'/data/items/{}.json'
-
-# map landscape ID to slug
-keyMapping = {
-    'open-mainframe-education': 'mainframe-open-education' 
-}
 
 csvRows = []
 
@@ -30,23 +25,24 @@ with urllib.request.urlopen(landscapeHostedProjects) as hostedProjectsResponse:
                 projectData = json.load(singleItemResponse)
                 print("Processing {}...".format(projectData['name']))
                 csvRows.append({
-                        'Name': projectData['name'],
-                        'Level': projectData['project'],
-                        'Logo URL': project['logo'],
-                        'Slug': projectData['id'],
-                        'Website': projectData['homepage_url'],
-                        'Leads': projectData['extra']['leads'] if 'extra' in projectData and 'leads' in projectData['extra'] else None,
-                        'Meeting Cadence': projectData['extra']['meeting_cadence'] if 'extra' in projectData and 'meeting_cadence' in projectData['extra'] else None,
-                        'LFX Insights URL': projectData['extra']['lfx_insights_url'] if 'extra' in projectData and 'lfx_insights_url' in projectData['extra'] else None,
-                        'Accepted Date': projectData['extra']['date_accepted'] if 'extra' in projectData and 'date_accepted' in projectData['extra'] else None,
-                        'Last Review Date': projectData['extra']['last_review_date'] if 'extra' in projectData and 'last_review_date' in projectData['extra'] else None,
-                        'Next Review Date': projectData['extra']['next_review_date'] if 'extra' in projectData and 'next_review_date' in projectData['extra'] else None,
-                        'Slack': projectData['extra']['slack_channel'] if 'extra' in projectData and 'slack_channel' in projectData['extra'] else None,
-                        'Mailing List': projectData['extra']['mailing_list_url'] if 'extra' in projectData and 'mailing_list_url' in projectData['extra'] else None,
-                        'User Mailing List': projectData['extra']['user_mailing_list_url'] if 'extra' in projectData and 'user_mailing_list_url' in projectData['extra'] else None,
-                        'Dev Mailing List': projectData['extra']['dev_mailing_list_url'] if 'extra' in projectData and 'dev_mailing_list_url' in projectData['extra'] else None,
-                        'Github Org': projectData['project_org'] if 'extra' in projectData and 'project_org' in projectData else None,
-                        'Primary Github Repo': projectData['repo_url'] if 'extra' in projectData and 'repo_url' in projectData else None
+                        'name': projectData['name'],
+                        'description': projectData['description'],
+                        'homepage_url': projectData['homepage_url'],
+                        'project': projectData['project'],
+                        'repo_url': project['repo_url'],
+                        'logo': projectData['logo'],
+                        'twitter': projectData['twitter'],
+                        'crunchbase': projectData['crunchbase'],
+                        'chat_channel': projectData['extra']['chat_channel'] if 'extra' in projectData and 'chat_channel' in projectData['extra'] else None,
+                        'accepted': projectData['extra']['accepted'] if 'extra' in projectData and 'accepted' in projectData['extra'] else None,
+                        'dev_stats_url': projectData['extra']['dev_stats_url'] if 'extra' in projectData and 'dev_stats_url' in projectData['extra'] else None,
+                        'artwork_url': projectData['extra']['artwork_url'] if 'extra' in projectData and 'artwork_url' in projectData['extra'] else None,
+                        'stack_overflow_url': projectData['extra']['stack_overflow_url'] if 'extra' in projectData and 'stack_overflow_url' in projectData['extra'] else None,
+                        'blog_url': projectData['extra']['blog_url'] if 'extra' in projectData and 'blog_url' in projectData['extra'] else None,
+                        'mailing_list_url': projectData['extra']['mailing_list_url'] if 'extra' in projectData and 'mailing_list_url' in projectData['extra'] else None,
+                        'slack_url': projectData['extra']['slack_url'] if 'extra' in projectData and 'slack_url' in projectData['extra'] else None,
+                        'gitter_url': projectData['extra']['gitter_url'] if 'extra' in projectData and 'gitter_url' in projectData['extra'] else None,
+                        'youtube_url': projectData['extra']['youtube_url'] if 'extra' in projectData and 'youtube_url' in projectData['extra'] else None
                         })
 
 with open(projectsCsvFile, 'w') as projectsCsvFileObject:
