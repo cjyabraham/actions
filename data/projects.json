@@ -1,6 +1,6 @@
 [
     {
-        "name": "containerd",
+        "sname": "containerd",
         "description": "An open and reliable container runtime",
         "homepage_url": "https://containerd.io/",
         "project": "graduated",
