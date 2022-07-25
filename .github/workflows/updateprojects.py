@@ -26,6 +26,7 @@ with urllib.request.urlopen(landscapeHostedProjects) as hostedProjectsResponse:
                 print("Processing {}...".format(projectData['name']))
                 csvRows.append({
                         'name': projectData['name'],
+                        'path': projectData['path'] if 'path' in projectData else None,
                         'description': projectData['description'] if 'description' in projectData else None,
                         'homepage_url': projectData['homepage_url'] if 'homepage_url' in projectData else None,
                         'project': projectData['project'] if 'project' in projectData else None,
@@ -42,7 +43,8 @@ with urllib.request.urlopen(landscapeHostedProjects) as hostedProjectsResponse:
                         'mailing_list_url': projectData['extra']['mailing_list_url'] if 'extra' in projectData and 'mailing_list_url' in projectData['extra'] else None,
                         'slack_url': projectData['extra']['slack_url'] if 'extra' in projectData and 'slack_url' in projectData['extra'] else None,
                         'gitter_url': projectData['extra']['gitter_url'] if 'extra' in projectData and 'gitter_url' in projectData['extra'] else None,
-                        'youtube_url': projectData['extra']['youtube_url'] if 'extra' in projectData and 'youtube_url' in projectData['extra'] else None
+                        'youtube_url': projectData['extra']['youtube_url'] if 'extra' in projectData and 'youtube_url' in projectData['extra'] else None,
+                        'language': projectData['github_data']['languages'][0] if 'github_data' in projectData and 'languages' in projectData['extra'] else None
                         })
 
 json_object = json.dumps(csvRows, indent=4)
