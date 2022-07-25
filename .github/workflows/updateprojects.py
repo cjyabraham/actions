@@ -44,7 +44,7 @@ with urllib.request.urlopen(landscapeHostedProjects) as hostedProjectsResponse:
                         'slack_url': projectData['extra']['slack_url'] if 'extra' in projectData and 'slack_url' in projectData['extra'] else None,
                         'gitter_url': projectData['extra']['gitter_url'] if 'extra' in projectData and 'gitter_url' in projectData['extra'] else None,
                         'youtube_url': projectData['extra']['youtube_url'] if 'extra' in projectData and 'youtube_url' in projectData['extra'] else None,
-                        'language': projectData['github_data']['languages'][0] if 'github_data' in projectData and 'languages' in projectData['github_data'] and len(projectData['github_data']['languages']) > 0 else None
+                        'language': projectData['github_data']['languages'][0]['name'] if 'github_data' in projectData and 'languages' in projectData['github_data'] and len(projectData['github_data']['languages']) > 0 else None
                         })
 
 json_object = json.dumps(csvRows, indent=4)
