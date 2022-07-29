@@ -1693,28 +1693,7 @@
         "youtube_url": null,
         "language": "Go"
     },
-    {
-        "name": "K8up",
-        "path": "Cloud Native Storage",
-        "description": "Kubernetes and OpenShift Backup Operator",
-        "homepage_url": "https://www.k8up.io/",
-        "project": "sandbox",
-        "repo_url": "https://github.com/k8up-io/k8up",
-        "logo": "k8up.svg",
-        "twitter": "https://twitter.com/CloudNativeFdn",
-        "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation",
-        "chat_channel": "#k8up",
-        "accepted": "2021-11-16",
-        "dev_stats_url": "https://k8up.devstats.cncf.io/",
-        "artwork_url": "https://github.com/cncf/artwork/blob/master/examples/sandbox.md#k8up-logos",
-        "stack_overflow_url": null,
-        "blog_url": null,
-        "mailing_list_url": null,
-        "slack_url": "https://community.appuio.ch/channel/k8up",
-        "gitter_url": null,
-        "youtube_url": null,
-        "language": "Go"
-    },
+   
     {
         "name": "Karmada",
         "path": "Scheduling & Orchestration",
