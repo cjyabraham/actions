@@ -1782,6 +1782,28 @@
         "language": null
     },
     {
+        "name": "Konveyor",
+        "path": "Application Definition & Image Build",
+        "description": "documentation for community members",
+        "homepage_url": "https://www.konveyor.io/",
+        "project": "sandbox",
+        "repo_url": "https://github.com/konveyor/community",
+        "logo": "logos/konveyor.svg",
+        "twitter": "https://twitter.com/Konveyor_io",
+        "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation",
+        "chat_channel": "#konveyor",
+        "accepted": "2022-07-26",
+        "dev_stats_url": "https://konveyor.devstats.cncf.io/",
+        "artwork_url": null,
+        "stack_overflow_url": null,
+        "blog_url": null,
+        "mailing_list_url": null,
+        "slack_url": "slack.k8s.io",
+        "gitter_url": null,
+        "youtube_url": null,
+        "language": null
+    },
+    {
         "name": "Krator",
         "path": "Application Definition & Image Build",
         "description": "Kubernetes Rust State Machine Operator",
