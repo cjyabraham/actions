@@ -1430,6 +1430,28 @@
         "language": "Go"
     },
     {
+        "name": "Carvel",
+        "path": "Application Definition & Image Build",
+        "description": "Carvel provides a set of reliable, single-purpose, composable tools that aid in your application building, configuration, and deployment to Kubernetes.",
+        "homepage_url": "https://carvel.dev",
+        "project": "sandbox",
+        "repo_url": "https://github.com/carvel-dev/ytt",
+        "logo": "logos/carvel.svg",
+        "twitter": "https://twitter.com/carvel_dev",
+        "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation",
+        "chat_channel": null,
+        "accepted": "2022-09-14",
+        "dev_stats_url": "https://carvel.devstats.cncf.io/",
+        "artwork_url": "https://github.com/cncf/artwork/tree/master/projects/carvel",
+        "stack_overflow_url": "https://stackoverflow.com/search?q=carvel&s=f9889d50-ba31-48ca-9919-414b961bd6ce",
+        "blog_url": "https://carvel.dev/blog/",
+        "mailing_list_url": null,
+        "slack_url": "https://kubernetes.slack.com/archives/CH8KCCKA5",
+        "gitter_url": null,
+        "youtube_url": null,
+        "language": "Go"
+    },
+    {
         "name": "CDK for Kubernetes (CDK8s)",
         "path": "Automation & Configuration",
         "description": "CDK8s lets you define Kubernetes apps and components using familiar programming languages and object-oriented APIs.",
