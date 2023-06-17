@@ -1870,6 +1870,28 @@
         "language": "Rust"
     },
     {
+        "name": "Headlamp",
+        "path": "Monitoring",
+        "description": "Extensible open source multi-cluster Kubernetes user interface",
+        "homepage_url": "https://headlamp.dev",
+        "project": "sandbox",
+        "repo_url": "https://github.com/headlamp-k8s/headlamp",
+        "logo": "logos/headlamp.svg",
+        "twitter": "https://twitter.com/headlamp_ui",
+        "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation",
+        "chat_channel": null,
+        "accepted": null,
+        "dev_stats_url": null,
+        "artwork_url": null,
+        "stack_overflow_url": null,
+        "blog_url": null,
+        "mailing_list_url": null,
+        "slack_url": null,
+        "gitter_url": null,
+        "youtube_url": null,
+        "language": "TypeScript"
+    },
+    {
         "name": "Hexa",
         "path": "Security & Compliance",
         "description": "Hexa Policy Orchestrator enables you to manage all of your access policies consistently across software providers.",
