@@ -1828,10 +1828,10 @@
     {
         "name": "Eraser",
         "path": "Scheduling & Orchestration",
-        "description": "Eraser helps Kubernetes admins remove a list of non-running images from all Kubernetes nodes in a cluster.",
-        "homepage_url": "https://azure.github.io/eraser/",
+        "description": "Eraser uses vulnerability data to remove non-running images from all Kubernetes nodes in a cluster.",
+        "homepage_url": "https://eraser-dev.github.io/eraser/",
         "project": "sandbox",
-        "repo_url": "https://github.com/Azure/eraser",
+        "repo_url": "https://github.com/eraser-dev/eraser",
         "logo": "logos/eraser.svg",
         "twitter": "https://twitter.com/CloudNativeFdn",
         "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation",
