@@ -242,28 +242,6 @@
         "language": "Go"
     },
     {
-        "name": "Istio (Wasm)",
-        "path": "Embedded Functions",
-        "description": "Simplify observability, traffic management, security, and policy with the Istio service mesh.",
-        "homepage_url": "https://istio.io/",
-        "project": "graduated",
-        "repo_url": "https://github.com/istio/istio",
-        "logo": "logos/istio-wasm.svg",
-        "twitter": "https://twitter.com/IstioMesh",
-        "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation",
-        "chat_channel": null,
-        "accepted": null,
-        "dev_stats_url": null,
-        "artwork_url": null,
-        "stack_overflow_url": null,
-        "blog_url": null,
-        "mailing_list_url": null,
-        "slack_url": null,
-        "gitter_url": null,
-        "youtube_url": null,
-        "language": "Go"
-    },
-    {
         "name": "Jaeger",
         "path": "Tracing",
         "description": "CNCF Jaeger, a Distributed Tracing Platform",
