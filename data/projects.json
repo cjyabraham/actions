@@ -566,9 +566,9 @@
         "stack_overflow_url": null,
         "blog_url": null,
         "mailing_list_url": null,
-        "slack_url": null,
+        "slack_url": "https://kubernetes.slack.com/messages/cert-manager",
         "gitter_url": null,
-        "youtube_url": null,
+        "youtube_url": "https://www.youtube.com/@cert-manager",
         "language": "Go"
     },
     {
